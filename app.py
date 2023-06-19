@@ -314,5 +314,7 @@ with gr.Blocks(css=cssLines, title=mainAppTitle, theme=theme) as demo:
 demo.launch(
     inbrowser=True,
     share=True,
-    auth=(adminID, adminPassword),auth_message=authMessage
+    auth=(adminID, adminPassword),auth_message=authMessage,
+    server_name="0.0.0.0",
+    server_port=9099
 )
